@@ -23,7 +23,7 @@ $(document).ready(function(){
         var western = $(this).html(); 
             console.log(western);
     
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + western + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + western + "&6kWGyG4yUE0MGyVKd2wuilv8mOkTe5FQ&limit=10";
             console.log(queryURL);
 
             $.ajax({url: queryURL, method: 'GET'})
@@ -61,5 +61,21 @@ $(document).ready(function(){
                     }
 
                 } //on click express
+
+        //adding new button
+        $(document).on('click', '#addExpress', function(){
+            if ($('#express-input').val().trim() == ''){
+            alert('please add western');
+        }
+        else {
+            var western = $('#express-input').val().trim();
+            topics.push(western);
+            $('#express-input').val('');
+            buttonExpress();
+            return false;
+
+            }
+
+    });
 
 }); 

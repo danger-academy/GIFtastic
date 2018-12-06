@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  var topics = ['deadwood', 'tombstone', 'blazing saddles', 'true grit', 'unforgiven', 'the outlaw josey wales', 'pale rider', 'the good the bad and the ugly'];
 
   //create topic array buttons
     function buttonExpress(){

@@ -1,1 +1,14 @@
-
+body{
+            background-image: url(../images/bg.jpg);
+            color: lightgrey;
+            font-family: 'Cabin Sketch', cursive;
+        }
+        #buttonsView{
+            color: black;
+        }
+        #express-form{
+            color: white;
+        }
+        #addExpress{
+            color: black;
+        }

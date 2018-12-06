@@ -37,14 +37,7 @@ $(document).ready(function(){
         
                         
                     
-               
 
 
-       
-
-
-//adding new button
-
-
-});  //document ready
+}); 
 

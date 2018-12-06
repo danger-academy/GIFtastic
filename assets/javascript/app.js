@@ -20,7 +20,12 @@ $(document).ready(function(){
     //on button click
     $(document).on('click', '.expression', function() {
 
-        //console.log(queryURL)
+    var western = $(this).html(); 
+    console.log(western);
+    
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + western + "&api_key=dc6zaTOxFJmzC&limit=10";
+        // console.log(queryURL);
+        $.ajax({url: queryURL, method: 'GET'})
             
             //grabs the data
             

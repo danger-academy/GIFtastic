@@ -26,8 +26,8 @@ $(document).ready(function(){
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + western + "&api_key=dc6zaTOxFJmzC&limit=10";
         // console.log(queryURL);
         $.ajax({url: queryURL, method: 'GET'})
-            
-            //grabs the data
+            .done(function(response) {
+            // grabs the data
             
                 //console.log(results)
 
